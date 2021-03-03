@@ -7,6 +7,12 @@ output: word_document
 
 ```{r}
 library(tidyverse)
+library(purrr)
+library(modelr)
+library(dplyr)
 mpg
+
+ggplot(data = mpg)+
+  geom_point(mapping = aes(x = hwy, y = cty))
 
 ```
